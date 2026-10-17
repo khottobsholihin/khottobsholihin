@@ -1,0 +1,355 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Khottob Sholihin</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Khottob Sholihin, Quranic studies researcher, lecturer and speaker on Tafsir and Quranic Sciences.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Amiri:wght@400;700&display=swap">
+<style id="site-style">
+/* Layout: a manuscript folio — one reading column framed by a ruled border (jadwal), dates sit in the margin like marginal notes. */
+:root{
+  --paper:#F4F6F3; --leaf:#FBFCFA; --ink:#17221F; --muted:#56635E; --rule:#C9D1CB;
+  --lapis:#1F4C86; --gold:#A27A2C; --danger:#A33A2E;
+  --display:"Alegreya", Georgia, "Times New Roman", serif;
+  --body:"Alegreya Sans", "Segoe UI", system-ui, sans-serif;
+  --arabic:"Amiri", "Traditional Arabic", "Noto Naskh Arabic", serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#101614; --leaf:#151D1A; --ink:#E4EAE6; --muted:#9AA8A2; --rule:#2C3934;
+  --lapis:#8DB0E8; --gold:#D2AE63; --danger:#E8897C; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --paper:#101614; --leaf:#151D1A; --ink:#E4EAE6; --muted:#9AA8A2; --rule:#2C3934;
+  --lapis:#8DB0E8; --gold:#D2AE63; --danger:#E8897C; color-scheme:dark }
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.075rem;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:clamp(16px,4vw,48px)}
+a{color:var(--lapis);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--lapis);outline-offset:3px;border-radius:2px}
+.ar{font-family:var(--arabic)}
+
+.folio{max-width:960px;margin:0 auto;background:var(--leaf);
+  border:1px solid var(--rule);outline:3px double var(--gold);outline-offset:-12px;
+  padding:clamp(28px,6vw,72px) clamp(22px,6vw,80px)}
+
+nav.top{display:flex;flex-wrap:wrap;gap:6px 22px;justify-content:center;font-size:.92rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:clamp(28px,5vw,52px)}
+nav.top a{color:var(--muted);text-decoration:none}
+nav.top a:hover{color:var(--lapis)}
+
+header.hero{text-align:center;display:grid;gap:10px;justify-items:center;padding-bottom:clamp(28px,5vw,48px)}
+.hero .ar{color:var(--gold);font-size:1.35rem;line-height:1.3}
+.hero h1{font-family:var(--display);font-weight:500;font-size:clamp(2.6rem,7vw,4.4rem);line-height:1.02;margin:0;letter-spacing:-.01em;text-wrap:balance}
+.hero .legal{color:var(--muted);font-size:.98rem;margin:0}
+.hero .role{font-family:var(--display);font-style:italic;font-size:clamp(1.15rem,2.4vw,1.4rem);margin:8px 0 0;max-width:34ch;text-wrap:balance}
+.hero .lede{max-width:62ch;margin:10px 0 0}
+.actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:14px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border:1px solid var(--lapis);border-radius:999px;text-decoration:none;font-weight:500;font-size:.98rem;color:var(--lapis);background:none;font-family:inherit;cursor:pointer}
+.btn.primary{background:var(--lapis);color:var(--leaf)}
+.btn.primary:hover{filter:brightness(1.08)}
+
+.jadwal{height:7px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+section{padding-block:clamp(30px,5vw,52px)}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+.sec-head h2{font-family:var(--display);font-weight:500;font-size:clamp(1.6rem,3.4vw,2.1rem);margin:0;text-wrap:balance}
+.sec-head .ar{color:var(--gold);font-size:1.4rem}
+
+.notes{display:grid;gap:22px;margin:0;padding:0;list-style:none}
+.note{display:grid;grid-template-columns:150px minmax(0,1fr);gap:4px 28px}
+.note .when{font-size:.86rem;letter-spacing:.04em;color:var(--muted);text-transform:uppercase;padding-top:4px;font-variant-numeric:tabular-nums}
+.note h3{font-family:var(--display);font-weight:700;font-size:1.18rem;margin:0;line-height:1.3}
+.note .where{color:var(--muted);font-style:italic;margin:0}
+.note p{margin:4px 0 0}
+@media (max-width:640px){.note{grid-template-columns:minmax(0,1fr)}.note .when{padding-top:0}}
+.sub{font-family:var(--display);font-weight:500;font-size:1.25rem;margin:36px 0 14px;color:var(--lapis)}
+
+.topics{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));border-top:1px solid var(--rule)}
+.topic{padding:18px 18px 18px 0;border-bottom:1px solid var(--rule);min-width:0}
+.topic .ar{color:var(--gold);font-size:1.2rem;display:block;line-height:1.4}
+.topic h3{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:2px 0 4px}
+.topic p{margin:0;color:var(--muted);font-size:.98rem}
+
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:20px 36px}
+.facts h3{font-size:.86rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500;margin:0 0 8px}
+.facts ul{margin:0;padding-left:1.1em}
+.facts li{margin-bottom:6px}
+.facts li::marker{color:var(--gold)}
+
+.thesis{margin-top:26px;padding:18px 22px;border-left:3px solid var(--gold);background:var(--paper)}
+.thesis .ar{font-size:1.3rem;line-height:1.8;display:block}
+.thesis em{display:block;margin-top:4px}
+
+.prose{max-width:62ch;margin:0 0 18px}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:14px}
+.c-item{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--rule);border-radius:6px;padding:12px 16px;min-width:0}
+.c-item > div{min-width:0}
+.c-item .lbl{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:block}
+.c-item .val{overflow-wrap:anywhere}
+.copy{flex:none;font:inherit;font-size:.86rem;background:none;border:1px solid var(--rule);color:var(--ink);border-radius:999px;padding:4px 12px;cursor:pointer}
+.copy:hover{border-color:var(--lapis);color:var(--lapis)}
+.links{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:20px}
+.link-edit{display:flex;flex-direction:column;gap:2px;border:1px dashed var(--rule);border-radius:6px;padding:6px 10px;min-width:0}
+.link-edit .url{font-size:.82rem;color:var(--muted);overflow-wrap:anywhere}
+footer{text-align:center;color:var(--muted);font-size:.9rem;padding-top:36px}
+
+/* edit mode */
+.editing [data-p]{outline:1px dashed var(--rule);outline-offset:2px;border-radius:3px;min-width:3ch;cursor:text}
+.editing [data-p]:focus{outline:2px solid var(--lapis)}
+.editing [data-p]:empty::before{content:attr(data-ph);color:var(--muted);opacity:.75;font-style:italic}
+.ctl{display:flex;gap:6px;margin-top:6px;flex-wrap:wrap}
+.ctl button,.add{font:inherit;font-size:.8rem;border:1px solid var(--rule);background:var(--leaf);color:var(--muted);border-radius:999px;padding:2px 10px;cursor:pointer}
+.ctl button:hover,.add:hover{color:var(--lapis);border-color:var(--lapis)}
+.ctl button.del:hover{color:var(--danger);border-color:var(--danger)}
+.add{margin-top:14px;border-style:dashed}
+.editbar{position:fixed;right:max(16px, calc(env(safe-area-inset-right, 0px) + 16px));bottom:calc(env(safe-area-inset-bottom, 0px) + 16px);z-index:20;display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end;background:var(--leaf);border:1px solid var(--rule);border-radius:999px;padding:6px;box-shadow:0 6px 24px rgba(0,0,0,.14);max-width:calc(100vw - 32px)}
+.editbar .msg{font-size:.86rem;color:var(--muted);padding:0 8px}
+.editbar .btn{padding:7px 14px;font-size:.92rem}
+.editbar .btn[disabled]{opacity:.55;cursor:default}
+@media (prefers-reduced-motion:no-preference){.btn,.copy,nav.top a{transition:color .15s,border-color .15s,filter .15s}}
+</style>
+
+<main class="folio" id="root"></main>
+
+<script type="application/json" id="data">{"hero":{"arabic":"التفسير وعلوم القرآن","name":"Khottob Sholihin","legal":"Muhammad Khottob Shoffan Sholihin, B.A.","role":"Quranic studies researcher, lecturer and speaker on Tafsir and Quranic Sciences","lede":"Master's student in Tafsir and Hadith and Research and Teaching Assistant at Al Qasimia University, Sharjah. Hafiz of the Quran with an ijazah in the Ḥafṣ ʿan ʿĀṣim recitation and a certified Da'i of the Indonesian Council of Ulama (MUI). Teaches in Indonesian, Arabic and English.","linkedin":"https://www.linkedin.com/in/muhammad-khottob-shoffan-sholihin-19274419b/"},
+"topics":[{"ar":"تدبّر","title":"Tafsir and tadabbur","text":"Reflecting on the Quran for general, campus and professional audiences."},{"ar":"لغة القرآن","title":"The language of the Quran","text":"Quranic linguistics and the Arabic behind the meaning."},{"ar":"الحديث","title":"Hadith and classical scholarship","text":"Reading the tradition through its classical sources."},{"ar":"تحقيق","title":"Islamic manuscripts","text":"How manuscripts are studied, edited and preserved."},{"ar":"تجويد","title":"Recitation and memorization","text":"Tajwid, Quran reading and the path of the hafiz."}],
+"lectures":[{"when":"Jul 2025 – Present","title":"Teacher, “Ngaji Makna” Tafsir Study Circle","where":"Yayasan Baitush Sholihin, Bandung · Remote","text":"A verse-by-verse tafsir series with linguistic and thematic insights, rooted in classical scholarship."},{"when":"Aug 2025 – Oct 2026","title":"Tadabbur Class Facilitator and Quranic Content Reviewer","where":"AgriQuran, Bandung · Remote, part-time","text":"Led tadabbur classes on nature and agriculture in the Quran, such as livestock and grapes, linking tafsir with the scientific indications in the verses. Reviewed AgriQuran's Quranic content for accuracy of verses, translation and interpretation."}],
+"talks":[{"when":"May 2025 – May 2026","title":"Weekly Islamic study and mentor training","where":"Poltekkes Kemenkes Bandung","text":""},{"when":"Sep 2025","title":"Islamic study session for students","where":"Telkom University, Bandung","text":""},{"when":"Jun 2025","title":"Eid al-Adha sermon (khutbah)","where":"Politeknik Manufaktur Negeri Bandung","text":""},{"when":"Mar 2025","title":"Ramadan talk","where":"PT Pertamina Hulu Rokan, Jakarta","text":""}],
+"teaching":[{"when":"Sep – Dec 2024","title":"Quranic Reading Teacher","where":"TPA KJRI Dubai, Indonesian Consulate's Quran Learning Center","text":"Taught Quran reading with the Iqra' method and the principles of Tajwid."},{"when":"Apr – Oct 2024","title":"Arabic Language Tutor","where":"Private, Dubai","text":"Taught Arabic to a family in Indonesian and English."},{"when":"Oct 2019 – Apr 2020","title":"Tahfizh Mentor","where":"Edu Global School, Indonesia","text":""}],
+"academic":[{"when":"Sep 2026 – Present","title":"Research and Teaching Assistant","where":"College of the Holy Quran, Al Qasimia University, Sharjah","text":"Supports faculty research and teaching in Quranic studies."},{"when":"Sep 2026 – Jun 2028","title":"Master of Arts in Tafsir and Hadith (in progress)","where":"Al Qasimia University, Sharjah","text":""},{"when":"Jan 2021 – Dec 2024","title":"B.A. in Tafsir and Quranic Sciences, cum laude","where":"Al Qasimia University, Sharjah · Full scholarship","text":"Thesis selected for display at the Al Qasimia University International Conference."},{"when":"2016 – 2019","title":"Pondok Pesantren Husnul Khotimah, grade Mumtaz","where":"Kuningan, West Java","text":"First student to recite the entire Quran (30 juz) in one sitting. Named exemplary student at graduation."},{"when":"2007 – 2016","title":"Quran memorization and Islamic studies","where":"Pondok Tahfidz Yanbu'ul Quran and Madrasah TBS, Kudus","text":""}],
+"thesis":{"ar":"تفسير سورة الإخلاص لمحمد الجندي المعري (ت 1264 هـ): دراسةً وتحقيقًا","en":"The Tafsir of Sūrat al-Ikhlāṣ by Muḥammad al-Jundī al-Maʿarrī (d. 1264 AH): A Study and Critical Edition. Undergraduate thesis."},
+"internships":[{"when":"Mar – May 2024","title":"Holy Quran Academy, Sharjah","where":"","text":"Studied the Academy's online Qira'at memorization system, the research framework of its Encyclopedia of Balaghah Tafsir, and Quranic manuscript preservation."},{"when":"Jan – Mar 2024","title":"Islamic Manuscripts House, Sharjah","where":"","text":"Took part in a group exercise verifying the manuscript of Tafsir al-Muʿawwidhatayn by al-Amir al-Kabir."}],
+"writing":{"text":"Tafsir articles on Medium, and short-form tafsir content on Instagram and TikTok. Also manages Kelas Tafsir on Instagram (@kelastafsir) and TikTok (@kelas.tafsir).","links":[{"label":"Read on Medium","url":"https://khottobsholihin.medium.com/"},{"label":"Instagram @khottobsholihin","url":"https://www.instagram.com/khottobsholihin/"},{"label":"Instagram @kelastafsir","url":"https://www.instagram.com/kelastafsir/"},{"label":"TikTok @kelas.tafsir","url":"https://www.tiktok.com/@kelas.tafsir"}]},
+"credentials":[{"heading":"Ijazah","items":["Riwayah Ḥafṣ ʿan ʿĀṣim, Sheikh Mu'tamad Rosim, 2019","Matn Tuhfat al-Aṭfāl, Shaikh Hisham Rageh, 2024"]},{"heading":"Certifications","items":["MUI Da'i Standardization, Aug 2025 (valid to Aug 2028)","SCRIPTS 2025, Summer Course on Islamic Manuscripts and Text, UII, Jul 2025","IELTS overall band 6.5, Feb 2025"]},{"heading":"Achievements","items":["1st place, 30 Juz Quran Memorization (MHQ), West Java Province, 2018","3rd place, Arabic Tafsir Competition, West Java Province, 2019","2nd place, Kitab Kuning Reading, MTs NU TBS Kudus, 2014"]},{"heading":"Leadership","items":["Chief of KPPSLN Dubai, 2024 Indonesian election","President, PPI UEA (Indonesian Students in the UAE), 2022–2023","Supervisory Board, PPI UEA, 2023–2024","Chief Executive, PPI UEA Mengabdi community service, 2021–2022"]},{"heading":"Languages","items":["Indonesian, native","Arabic, fluent","English, proficient"]}],
+"contact":{"text":"For speaking invitations, study circles, or academic collaboration. Based in Sharjah, UAE, and available for online sessions.","email":"khottob.ss@gmail.com","uae":"+971 50 825 1662","whatsapp":"+62 851 5675 7579"},
+"social":[{"label":"LinkedIn","url":"https://www.linkedin.com/in/muhammad-khottob-shoffan-sholihin-19274419b/"},{"label":"Medium","url":"https://khottobsholihin.medium.com/"},{"label":"Instagram","url":"https://www.instagram.com/khottobsholihin/"}],
+"footer":"Khottob Sholihin · Sharjah, UAE"}</script>
+
+<script id="app">
+(function(){
+var HEAD = '<title>Khottob Sholihin<\/title>\n<meta name="claude:viewport-fit-sides" content="cover">\n<meta name="description" content="Khottob Sholihin, Quranic studies researcher, lecturer and speaker on Tafsir and Quranic Sciences.">\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Amiri:wght@400;700&display=swap">\n';
+var SKELETON = '<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}<\/style><\/head><body>';
+
+var state = JSON.parse(document.getElementById('data').textContent);
+var saved = JSON.stringify(state);
+var editing = false;
+var root = document.getElementById('root');
+
+function get(path){ return path.split('.').reduce(function(o,k){ return o == null ? o : o[k]; }, state); }
+function set(path, v){ var ks = path.split('.'); var last = ks.pop(); var o = ks.reduce(function(o,k){ return o[k]; }, state); o[last] = v; }
+
+function h(tag, attrs){
+  var e = document.createElement(tag);
+  if (attrs) for (var k in attrs){ if (attrs[k] == null) continue; if (k === 'text') e.textContent = attrs[k]; else e.setAttribute(k, attrs[k]); }
+  for (var i = 2; i < arguments.length; i++){ var c = arguments[i]; if (c == null) continue; if (Array.isArray(c)) c.forEach(function(x){ if (x) e.appendChild(x); }); else e.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); }
+  return e;
+}
+// An editable text field bound to a path in state. Hidden in view mode when empty.
+function f(tag, path, cls, ph, extra){
+  var v = get(path) || '';
+  if (!editing && !v) return null;
+  var a = Object.assign({ 'class': cls || null, text: v }, extra || {});
+  var e = h(tag, a);
+  if (editing){ e.setAttribute('data-p', path); e.setAttribute('data-ph', ph || 'Type here'); e.setAttribute('contenteditable', 'plaintext-only'); if (e.contentEditable !== 'plaintext-only') e.setAttribute('contenteditable', 'true'); e.setAttribute('spellcheck', 'true'); }
+  return e;
+}
+function ctl(list, i, n){
+  if (!editing) return null;
+  return h('div', { 'class': 'ctl' },
+    i > 0 ? h('button', { type: 'button', 'data-act': 'up', 'data-list': list, 'data-i': i, text: '↑ Move up' }) : null,
+    i < n - 1 ? h('button', { type: 'button', 'data-act': 'down', 'data-list': list, 'data-i': i, text: '↓ Move down' }) : null,
+    h('button', { type: 'button', 'class': 'del', 'data-act': 'del', 'data-list': list, 'data-i': i, text: '× Remove' }));
+}
+function addBtn(list, label){ return editing ? h('button', { type: 'button', 'class': 'add', 'data-act': 'add', 'data-list': list, text: '+ ' + label }) : null; }
+function jadwal(){ return h('div', { 'class': 'jadwal', role: 'presentation' }); }
+function head(id, title, ar){ return h('div', { 'class': 'sec-head' }, h('h2', { id: id, text: title }), h('span', { 'class': 'ar', lang: 'ar', text: ar })); }
+
+function notes(list, addLabel){
+  var arr = get(list);
+  return [h('ul', { 'class': 'notes' }, arr.map(function(it, i){
+    var p = list + '.' + i;
+    return h('li', { 'class': 'note' },
+      f('span', p + '.when', 'when', 'Date'),
+      h('div', null,
+        f('h3', p + '.title', null, 'Title'),
+        f('p', p + '.where', 'where', 'Place (optional)'),
+        f('p', p + '.text', null, 'Description (optional)'),
+        ctl(list, i, arr.length)));
+  })), addBtn(list, addLabel)];
+}
+function links(list){
+  var arr = get(list);
+  return [h('div', { 'class': 'links' }, arr.map(function(l, i){
+    var p = list + '.' + i;
+    if (!editing) return l.url ? h('a', { href: l.url, target: '_blank', rel: 'noopener', text: l.label }) : null;
+    return h('div', { 'class': 'link-edit' }, f('span', p + '.label', null, 'Link text'), f('span', p + '.url', 'url', 'https://…'), ctl(list, i, arr.length));
+  })), addBtn(list, 'Add link')];
+}
+
+function render(){
+  var s = state;
+  root.classList.toggle('editing', editing);
+  root.replaceChildren(
+    h('nav', { 'class': 'top', 'aria-label': 'Sections' },
+      h('a', { href: '#speaking', text: 'Speaking' }), h('a', { href: '#academic', text: 'Academic' }), h('a', { href: '#writing', text: 'Writing' }), h('a', { href: '#credentials', text: 'Credentials' }), h('a', { href: '#contact', text: 'Contact' })),
+    h('header', { 'class': 'hero' },
+      f('span', 'hero.arabic', 'ar', 'Arabic line', { lang: 'ar', dir: 'rtl' }),
+      f('h1', 'hero.name', null, 'Name'),
+      f('p', 'hero.legal', 'legal', 'Full name'),
+      f('p', 'hero.role', 'role', 'One-line role'),
+      f('p', 'hero.lede', 'lede', 'Short introduction'),
+      h('div', { 'class': 'actions' },
+        h('a', { 'class': 'btn primary', href: '#contact', text: 'Invite to speak' }),
+        editing ? h('div', { 'class': 'link-edit' }, h('span', { text: 'LinkedIn profile URL' }), f('span', 'hero.linkedin', 'url', 'https://…'))
+                : (s.hero.linkedin ? h('a', { 'class': 'btn', href: s.hero.linkedin, target: '_blank', rel: 'noopener', text: 'LinkedIn profile' }) : null))),
+    jadwal(),
+    h('section', { id: 'topics', 'aria-labelledby': 'topics-h' }, head('topics-h', 'Speaking topics', 'موضوعات'),
+      h('div', { 'class': 'topics' }, s.topics.map(function(t, i){
+        var p = 'topics.' + i;
+        return h('div', { 'class': 'topic' }, f('span', p + '.ar', 'ar', 'Arabic word', { lang: 'ar', dir: 'rtl' }), f('h3', p + '.title', null, 'Topic'), f('p', p + '.text', null, 'Short description'), ctl('topics', i, s.topics.length));
+      })), addBtn('topics', 'Add topic')),
+    jadwal(),
+    h('section', { id: 'speaking', 'aria-labelledby': 'speaking-h' }, head('speaking-h', 'Lecturing and speaking', 'محاضرات'),
+      notes('lectures', 'Add regular class'),
+      h('h3', { 'class': 'sub', text: 'Guest talks' }), notes('talks', 'Add guest talk'),
+      h('h3', { 'class': 'sub', text: 'Teaching' }), notes('teaching', 'Add teaching role')),
+    jadwal(),
+    h('section', { id: 'academic', 'aria-labelledby': 'academic-h' }, head('academic-h', 'Academic', 'المسيرة العلمية'),
+      notes('academic', 'Add academic entry'),
+      h('div', { 'class': 'thesis' }, f('span', 'thesis.ar', 'ar', 'Thesis title in Arabic', { lang: 'ar', dir: 'rtl' }), f('em', 'thesis.en', null, 'Thesis title in English')),
+      h('h3', { 'class': 'sub', text: 'Internships' }), notes('internships', 'Add internship')),
+    jadwal(),
+    h('section', { id: 'writing', 'aria-labelledby': 'writing-h' }, head('writing-h', 'Writing and content', 'كتابات'),
+      f('p', 'writing.text', 'prose', 'About your writing'), links('writing.links')),
+    jadwal(),
+    h('section', { id: 'credentials', 'aria-labelledby': 'cred-h' }, head('cred-h', 'Credentials', 'إجازات وشهادات'),
+      h('div', { 'class': 'facts' }, s.credentials.map(function(g, gi){
+        var gp = 'credentials.' + gi;
+        return h('div', null, f('h3', gp + '.heading', null, 'Group name'),
+          h('ul', null, g.items.map(function(_, ii){
+            return h('li', null, f('span', gp + '.items.' + ii, null, 'Item'), ctl(gp + '.items', ii, g.items.length));
+          })), addBtn(gp + '.items', 'Add item'), ctl('credentials', gi, s.credentials.length));
+      })), addBtn('credentials', 'Add group')),
+    jadwal(),
+    h('section', { id: 'contact', 'aria-labelledby': 'contact-h' }, head('contact-h', 'Contact', 'تواصل'),
+      f('p', 'contact.text', 'prose', 'Invitation note'),
+      h('div', { 'class': 'contact' },
+        contactItem('Email', 'contact.email', s.contact.email),
+        contactItem('Phone · UAE', 'contact.uae', (s.contact.uae || '').replace(/[^+\d]/g, '')),
+        contactItem('WhatsApp · Indonesia', 'contact.whatsapp', (s.contact.whatsapp || '').replace(/[^+\d]/g, ''))),
+      links('social')),
+    f('footer', 'footer', null, 'Footer text')
+  );
+}
+function contactItem(label, path, copyVal){
+  var v = f('span', path, 'val', label);
+  if (!v) return null;
+  return h('div', { 'class': 'c-item' }, h('div', null, h('span', { 'class': 'lbl', text: label }), v),
+    editing ? null : h('button', { 'class': 'copy', type: 'button', 'data-copy': copyVal, text: 'Copy' }));
+}
+
+// Pull every edited field back into state.
+function harvest(){
+  root.querySelectorAll('[data-p]').forEach(function(e){ set(e.getAttribute('data-p'), e.textContent.replace(/ /g, ' ').trim()); });
+}
+function template(list){
+  if (/items$/.test(list)) return '';
+  if (/links$/.test(list) || list === 'social') return { label: '', url: '' };
+  if (list === 'topics') return { ar: '', title: '', text: '' };
+  if (list === 'credentials') return { heading: '', items: [] };
+  return { when: '', title: '', where: '', text: '' };
+}
+function blank(sample){
+  if (typeof sample === 'string') return '';
+  var o = {}; for (var k in sample) o[k] = Array.isArray(sample[k]) ? [] : (typeof sample[k] === 'object' ? blank(sample[k]) : ''); return o;
+}
+
+root.addEventListener('click', function(ev){
+  var b = ev.target.closest('button');
+  if (!b) return;
+  if (b.classList.contains('copy')){
+    var text = b.getAttribute('data-copy');
+    var reset = function(){ setTimeout(function(){ b.textContent = 'Copy'; }, 1600); };
+    var fallback = function(){ var el = b.parentElement.querySelector('.val'); var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected'; reset(); };
+    try { navigator.clipboard.writeText(text).then(function(){ b.textContent = 'Copied'; reset(); }, fallback); } catch (e) { fallback(); }
+    return;
+  }
+  var act = b.getAttribute('data-act'); if (!act) return;
+  harvest();
+  var arr = get(b.getAttribute('data-list')); var i = +b.getAttribute('data-i');
+  if (act === 'add'){ arr.push(arr.length ? blank(arr[0]) : template(b.getAttribute('data-list'))); }
+  else if (act === 'del'){ arr.splice(i, 1); }
+  else if (act === 'up' && i > 0){ var t = arr[i-1]; arr[i-1] = arr[i]; arr[i] = t; }
+  else if (act === 'down' && i < arr.length - 1){ var t2 = arr[i+1]; arr[i+1] = arr[i]; arr[i] = t2; }
+  render(); markDirty();
+});
+root.addEventListener('input', markDirty);
+root.addEventListener('keydown', function(ev){ if (ev.key === 'Enter' && ev.target.matches && ev.target.matches('[data-p]')){ ev.preventDefault(); ev.target.blur(); } });
+
+// Owner edit bar
+var bar, msg, editBtn, saveBtn, cancelBtn, artifactNS = null, dirty = false;
+function markDirty(){ if (!editing) return; dirty = true; if (saveBtn) saveBtn.disabled = false; if (msg) msg.textContent = 'Unsaved changes'; }
+function setMode(on){
+  editing = on; render();
+  editBtn.hidden = on; saveBtn.hidden = !on; cancelBtn.hidden = !on;
+  saveBtn.disabled = true; dirty = false;
+  msg.textContent = on ? 'Click any text to edit' : '';
+}
+function buildDocument(){
+  // drop empty entries left by an unused "Add" click
+  ['lectures','talks','teaching','academic','internships'].forEach(function(k){ state[k] = state[k].filter(function(x){ return x.title || x.when; }); });
+  state.topics = state.topics.filter(function(x){ return x.title; });
+  state.writing.links = state.writing.links.filter(function(x){ return x.url; });
+  state.social = state.social.filter(function(x){ return x.url; });
+  state.credentials.forEach(function(g){ g.items = g.items.filter(Boolean); });
+  state.credentials = state.credentials.filter(function(g){ return g.heading || g.items.length; });
+  var json = JSON.stringify(state).replace(/</g, '\\u003c');
+  return SKELETON + HEAD +
+    '<style id="site-style">' + document.getElementById('site-style').textContent + '<\/style>\n\n' +
+    '<main class="folio" id="root"><\/main>\n\n' +
+    '<script type="application/json" id="data">' + json + '<\/script>\n\n' +
+    '<script id="app">' + document.getElementById('app').textContent + '<\/script>\n' +
+    '<\/body><\/html>';
+}
+async function save(){
+  harvest();
+  saveBtn.disabled = true; cancelBtn.disabled = true; msg.textContent = 'Saving…';
+  try {
+    await artifactNS.publish(buildDocument());
+    msg.textContent = 'Saved. Reloading…';
+  } catch (e) {
+    var code = e && e.code;
+    cancelBtn.disabled = false;
+    if (code === 'conflict') msg.textContent = 'A newer version was published. The page is reloading to it.';
+    else if (code === 'not_writer' || code === 'not_granted' || code === 'not_declared' || code === 'capability_disabled' || code === 'consent_required') { msg.textContent = 'This view is read-only.'; saveBtn.hidden = true; }
+    else if (code === 'rate_limited') { msg.textContent = 'Saving too often. Wait a minute, then save again.'; saveBtn.disabled = false; }
+    else { msg.textContent = 'Could not save. Check your connection and try again.'; saveBtn.disabled = false; }
+  }
+}
+async function setupEditing(){
+  if (!window.claude || !window.claude.use) return;
+  var user = await window.claude.use('user');
+  var canEdit = false;
+  try { canEdit = user ? await user.canEdit() : false; } catch (e) {}
+  if (!canEdit) return;
+  artifactNS = await window.claude.use('artifact');
+  if (!artifactNS) return;
+  bar = h('div', { 'class': 'editbar', role: 'toolbar', 'aria-label': 'Page editing' });
+  msg = h('span', { 'class': 'msg', 'aria-live': 'polite' });
+  editBtn = h('button', { 'class': 'btn primary', type: 'button', id: 'edit-page', text: 'Edit page' });
+  cancelBtn = h('button', { 'class': 'btn', type: 'button', id: 'cancel-edit', text: 'Cancel' });
+  saveBtn = h('button', { 'class': 'btn primary', type: 'button', id: 'save-page', text: 'Save and publish' });
+  bar.append(msg, editBtn, cancelBtn, saveBtn);
+  document.body.appendChild(bar);
+  editBtn.onclick = function(){ setMode(true); };
+  cancelBtn.onclick = function(){ state = JSON.parse(saved); setMode(false); };
+  saveBtn.onclick = save;
+  setMode(false);
+}
+window.addEventListener('beforeunload', function(e){ if (editing && dirty) { e.preventDefault(); e.returnValue = ''; } });
+
+render();
+setupEditing();
+})();
+</script>
+
+</body></html>
